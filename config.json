@@ -1,0 +1,59 @@
+{
+  "name": "Stanford Letter Project PDF",
+
+  "namespace": "Stanford\\LetterProjectPDF",
+
+  "authors": [
+    {
+      "name": "Jae Lee",
+      "email": "jael@stanford.edu",
+      "institution": "Stanford University"
+    }
+  ],
+
+  "permissions": [
+    "redcap_save_record",
+    "redcap_survey_page_top",
+    "redcap_survey_complete"
+  ],
+
+  "description": "Stanford Letter Project offshoot that only handles the custom PDF",
+
+  "links": {
+    "project": [
+      {
+        "name": "ADMIN: Letter PDF",
+        "icon": "gear",
+        "url": "GetLetter.php?NOAUTH"
+      }
+    ]
+  },
+
+  "no-auth-pages": [
+    "GetLetter"
+  ],
+
+  "system-settings": [
+    {
+      "key": "enable-system-debug-logging",
+      "name": "<b>Enable Debug Logging (system-wide)</b>",
+      "required": false,
+      "type": "checkbox"
+    }
+  ],
+
+  "project-settings": [
+    {
+      "key": "enable-project-debug-logging",
+      "name": "<b>Enable Debug Logging</b>",
+      "required": false,
+      "type": "checkbox"
+    },
+    {
+      "key": "last-survey",
+      "name": "<b>Last Survey</b>",
+      "required": false,
+      "type": "form-list"
+    }
+  ]
+}
